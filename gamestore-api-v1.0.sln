@@ -20,12 +20,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{89B27D
 		docs\images\A.txt = docs\images\A.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Api", "src\GameStore.Api\GameStore.Api.csproj", "{377DC049-B201-4D4B-A753-815404BDB097}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{377DC049-B201-4D4B-A753-815404BDB097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377DC049-B201-4D4B-A753-815404BDB097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377DC049-B201-4D4B-A753-815404BDB097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377DC049-B201-4D4B-A753-815404BDB097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89B27DBC-1DCB-459B-953D-9B0FEF258C7B} = {E33B343F-B726-457A-BBBC-A28F1F042D11}
+		{377DC049-B201-4D4B-A753-815404BDB097} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38E5BABC-13DE-4F2F-BE56-739109284FE2}
