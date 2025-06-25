@@ -129,7 +129,10 @@ gamestore-api-v1.0/
 ├── docs/
 │   ├── v1.0-Basic-In-Memory-API.md  # Detailed documentation
 │   └── images/                   # Documentation images
+├── Directory.Build.props         # Build configuration settings
 ├── Directory.Packages.props      # Centralized package management
+├── gamestore-api-v1.0.sln        # Solution file
+├── LICENSE                       # License file
 └── README.md                     # This file
 ```
 
