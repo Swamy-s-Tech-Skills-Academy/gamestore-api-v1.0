@@ -1,4 +1,4 @@
-@GameAPIs_HostAddress=https://localhost:7202
+@GameAPIs_HostAddress=https://localhost:7011
 @ContentType = application/json
 
 ### Root Route
@@ -22,28 +22,21 @@ Content-Type: {{ContentType}}
 
 {
     "name": "Test Game",
-    "genreId": "C0FE34BF-1E5F-43A0-B370-AB7C45B388C1",
     "genre": "Action",
     "price": 19.99,
-    "releaseDate": "1992-07-15",
-    "description": "Test Description"
+    "releaseDate": "1992-07-15"
 }
 
-###
+### Update Game
 PUT {{GameAPIs_HostAddress}}/games/954aaaad-fcf4-4ed2-9106-eee20fff87d5
 Content-Type: {{ContentType}}
 
 {
     "name": "Test Game Updated",
     "genre": "Family and Kids",
-    "genreId": "AF333D56-2146-4899-9ABE-BA9ABD7EFC83",
     "price": 7.97,
-    "releaseDate": "2011-11-18",
-    "description": "Survive the night or create a work of art in the hit sandbox game! Build anything you can imagine, uncover mysteries, and face thrilling foes in an infinite world that's unique in every playthrough. There's no wrong way to play!"
+    "releaseDate": "2011-11-18"
 }
 
-###
+### Delete Game
 DELETE {{GameAPIs_HostAddress}}/games/954aaaad-fcf4-4ed2-9106-eee20fff87d5
-
-###
-GET {{GameAPIs_HostAddress}}/genres
