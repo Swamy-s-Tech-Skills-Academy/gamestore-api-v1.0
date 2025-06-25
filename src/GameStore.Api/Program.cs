@@ -1,12 +1,19 @@
 using GameStore.Api.Models;
+using Scalar.AspNetCore;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddOpenApi();
 
 WebApplication? app = builder.Build();
 
 // Http Request pipeline Configuration
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+    app.MapScalarApiReference();
+}
 
 
 // Endpoints
