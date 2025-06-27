@@ -129,4 +129,4 @@ app.MapDelete("/games/{id:guid}", (Guid id) =>
     .Produces(StatusCodes.Status404NotFound)
     .Produces(StatusCodes.Status500InternalServerError);
 
-app.Run();
+await app.RunAsync();
