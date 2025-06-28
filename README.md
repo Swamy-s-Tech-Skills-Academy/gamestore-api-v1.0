@@ -62,6 +62,12 @@ A modern RESTful API built with .NET 10 Minimal APIs for managing a game store i
    dotnet run --project src/GameStore.Api
    ```
 
+   **Or for development with hot reload:**
+
+   ```bash
+   dotnet watch --project .\src\GameStore.Api\
+   ```
+
 4. **Access the API**
 
    - API Base URL: `https://localhost:7011`
